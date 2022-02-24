@@ -18,6 +18,7 @@ use App\Http\Controllers\BlogController;
 //     return view('welcome');
 // });
 //Route::get('/ww', 'PagesController@index');
+Route::get('/', [PagesController::class, 'index']);
 Route::get('/index', [PagesController::class, 'index']);
 Route::get('/about', [PagesController::class, 'about']);
 //Route::get('/blog', [PagesController::class, 'about']);
